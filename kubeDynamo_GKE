@@ -179,7 +179,7 @@ func main() {
 		fmt.Fprintln(customImageDockerFile, `RUN chmod 700 get_helm.sh`)
 		fmt.Fprintln(customImageDockerFile, `RUN ./get_helm.sh`)
 		fmt.Fprintln(customImageDockerFile, "RUN apt install git -y")
-		fmt.Fprintln(customImageDockerFile, `RUN git clone https://pgoode41:fdd8b0de31f84de130b931232fb4d557d4bb1438@github.com/pgoode41/IBM_Project.git`)
+		fmt.Fprintln(customImageDockerFile, `RUN git clone https://github.com/pgoode41/IBM_Project.git`)
 		fmt.Fprintln(customImageDockerFile, "RUN mkdir /TestLoads")
 		fmt.Fprintln(customImageDockerFile, "RUN apt update -y")
 		fmt.Fprintln(customImageDockerFile, "RUN apt upgrade -y")
